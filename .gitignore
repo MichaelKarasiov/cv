@@ -9,3 +9,5 @@
 *.aux
 *.synctex(busy)
 *.out
+
+!CV_C++_Michael_Karasov.pdf
