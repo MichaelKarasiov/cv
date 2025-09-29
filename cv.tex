@@ -13,9 +13,10 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \pagestyle{fancy}
-\fancyfoot[L]{Michael Karasov}
+\fancyfoot[L]{Mykhailo Karasov}
 \fancyfoot[C]{Page \thepage\ of \pageref*{LastPage}}
-\fancyfoot[R]{\today}
+%\fancyfoot[R]{\today}
+\fancyfoot[R]{August 27, 2025}
 \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
 \fancyhead{}
 \renewcommand{\headrulewidth}{0pt}
@@ -24,8 +25,8 @@
 % https://tex.stackexchange.com/a/311949/142692
 % https://tex.stackexchange.com/questions/387499/how-to-create-a-border-that-looks-like-a-tag
 \usepackage{tikz}
-\definecolor{tagbg}{RGB}{182,201,190}
-\definecolor{tagtxt}{RGB}{50,81,65}
+\definecolor{tagbg}{RGB}{77,77,77}
+\definecolor{tagtxt}{RGB}{233,233,233}
 \newcommand{\sotag}[1]{\tikz[baseline]{\node[anchor=base, rounded corners=0.5ex, text height=1.5ex, text depth=.25ex, fill=tagbg, draw=tagbg, text=tagtxt] {#1};}}
 
 % Helpers for adding job entries
@@ -46,48 +47,59 @@
 
 % --------------------TITLE-------------
 \par{\centering
-		{\Huge \textsc{Michael Karasov}
+		{\Huge \textsc{Mykhailo Karasov}
 	}\bigskip\par}
 
 \hrule
 \vspace{0.5em}
 \begin{tabular}{rl}
-  \textsc{Phone:}     & +40 746 511 429 (Romania)\\
+  \textsc{Phone:}     & +34 632 12 37 55 (Spain)\\
   \textsc{Email:}     & \href{mailto:michailkarasiov@gmail.com}{michailkarasiov@gmail.com}\\
   \textsc{Socials:}   & \faLinkedin{} \href{https://www.linkedin.com/in/michael-karasov-2731465a/}{linkedin}
-  | \faGithub{} \href{https://github.com/MichaelKarasiov}{github}
 \end{tabular}
 
 \section{Summary}
 \begin{tabular}{p{0.9\textwidth}}
 Passionate C++ Developer with a Future-Focused Mindset\\\
 
-A software developer with a deep expertise in C++ and a knack for breathing new life into legacy systems. With 10 years of experience, I blend old-school coding prowess with modern problem-solving approaches. I treat every project as if it's my own business, making decisions with a results-driven mentality. Beyond coding, I’m an advocate for developer productivity and always eager to help others grows.
+A C++ developer with 10 years of experience and a track record of reviving legacy systems. I pair old-school craftsmanship with modern, data-driven practices-instrumenting services with New Relic APM and low-level profilers to expose bottlenecks and deliver measurable performance improvements (lower p99 latency, reduced memory footprint, higher throughput). I treat every project like a business, making ROI-focused decisions. Beyond shipping code, I actively mentor others to grow.
 \end{tabular}
 
 \section{Work Experience}
 \begin{longtable}{r|p{0.72\textwidth}}
 
-  \textsc{Aug 2021--Jun 2024} & \job{Team Lead}{Luxoft}, France \\(2 years 11 months)
-     &\sotag{C\#} \sotag{Delphi} \sotag{C++} \sotag{AWS} \sotag{Linux}  \sotag{Windows} \sotag{Docker} \sotag{Gitlab} \sotag{Azure} \sotag{JFrog} \\&\\
-    &As a Team Leader of a small team of 8 people, I was working on a project related to migrating obsolete monolithic applications to the AWS cloud.\\&\\
-    &I was the primary communicator with other teams and customers to deliver timely features and bug fixes.\\&\\
-    &Spearheaded the onboarding process for new engineers, introducing them to our codebase.\\&\\
-    &Served as the primary resource for supporting team members, troubleshooting issues, and developing.\\\sep
 
+\textsc{Jul 2024 - current} & \job{UE Game Developer}{Indie} Spain/Romania \\
+&\sotag{C++} \sotag{Unreal Engine 5.4} \sotag{Gameplay Architecture} \sotag{GAS} \sotag{3D Modelling} \sotag{OpenAI API} \sotag{Perforce} \sotag{GitLab CI/CD} \sotag{Azure} \sotag{Windows}\\&\\
+&Led development of a simulation/strategy game using Unreal Engine 5.4 and the
+Lyra game template, focusing on gameplay systems, physical animation, and AI
+behaviour.\\&\\
+&Architected core systems including inventory, trading, and melee combat, leveraging Gameplay Ability System (GAS) for modular gameplay features.\\&\\
+&Collaborated closely with a multidisciplinary indie team of 4 people (art, design, sound) while also implementing and integrating OpenAI APIs for in-game assistant features.\\&\\
+&Managed source control using Perforce and automated build processes via GitLab
+CI/CD and Azure pipelines.\\\sep
+  \hline\\
+  \textsc{Aug 2021--Jun 2024} & \job{Team Lead}{Luxoft}, Ukraine \\(2 years 11 months)
+     &\sotag{C++} \sotag{C\#} \sotag{AWS} \sotag{New Relic} \sotag{Linux} \sotag{Windows}  \sotag{Docker} \sotag{GitLab} \sotag{Azure} \sotag{JFrog} \sotag{Delphi} \\&\\
+&Managed an 8-person team delivering a phased migration from a legacy monolith to AWS.\\&\\
+
+&Established CI/CD and IaC, plus New Relic backed SLOs, improving deploy from weekly to daily(about 5x), and p99 latency from 1.2s to 480ms (-60\%) and p95 from 600ms to 240ms (for separate services, measured in New Relic APM).\\&\\
+
+&Served as the technical escalation point and mentor, unblocking engineers, running design reviews, and keeping the roadmap on track with stakeholders. Was responsible for feature/release builds (integration activity), fixing security issues and performing license check reports.
+\\\sep
 
   \textsc{Nov 2020--Aug 2021} & \job{Senior Software Engineer}{Luxoft}, Ukraine \\(10 months)
-     &\sotag{C\#} \sotag{Delphi} \sotag{C++} \sotag{AWS} \sotag{Linux}  \sotag{Windows} \sotag{Docker} \sotag{Gitlab} \sotag{Azure} \sotag{JFrog} \\&\\
-    &I was at the start of migrating a monolithic application to the AWS cloud, designed the approach, and implemented most of the back-end services.\\\sep
+     &\sotag{C++} \sotag{C\#} \sotag{AWS} \sotag{New Relic} \sotag{Linux} \sotag{Windows}  \sotag{Docker} \sotag{GitLab} \sotag{Azure}  \\&\\
+    &I've built an MVP under a tight deadline that won approval and secured project funding; implemented high-performance AWS microservices, integrated them into a desktop application, and instrumented with New Relic to surface bottlenecks and validate improvements, earning stakeholder sign-off.\\\sep
     
     \hline
   \multicolumn{2}{r}{\footnotesize\itshape (abbreviated work history below, see the LinkedIn profile for full details)}\\\sep
   
   \textsc{Oct 2017 - Apr 2020} & \job{Software Developer }{Luxoft} (Volkswagen project), Ukraine \\(2 years 7 months)
-     &\sotag{C++} \sotag{Boost} \sotag{Linux} \sotag{Multithreading} \sotag{Unit Testing} \sotag{Bash} \sotag{CMake} \sotag{SQLite} \sotag{PosgreSQL}\\&\\
-    &As a Software Developer, I was in the middle and final stages of the development of a car computer (Head Unit).\\&\\
-    
-    &I was responsive for the "Connectivity" domain related to smartphone pairing to the car computer and appropriate functionality, such as phone calls via Bluetooth, downloading contacts, mirroring phone devices to the car's Head Unit, playing audio using a phone, etc. \\\sep
+     &\sotag{C++} \sotag{Boost} \sotag{Linux} \sotag{Multithreading} \sotag{Unit Testing} \sotag{Bash} \sotag{CMake} \sotag{SQLite} \\&\\
+    & Software Developer on an in-vehicle Head Unit (mid-to-final phases); was part of the Connectivity domain: smartphone pairing, Bluetooth calling, contact sync, phone mirroring, and media playback.\\&\\
+    & Delivered performance gains via async I/O, connection-state caching, and lock-contention fixes, cut device-pairing time by 50\% and reduced contact-sync p99 latency from 30s to 5s.\\&\\
+    & Designed and implemented a multithreaded task-cancellation mechanism (priority-aware cancellation tokens and cooperative checkpoints) to preempt long-running syncs when the user changes context; eliminated UI hangs and reduced interaction latency by 90\%. \\\sep
   \hline\\
     
   \textsc{May 2016 - Oct 2017} & \job{C++/Qt Developer}{Chameleon soft LTD}, Ukraine \\(1 year 6 months)
@@ -106,13 +118,13 @@ A software developer with a deep expertise in C++ and a knack for breathing new 
 \begin{tabular}{rl}
   \textsc{Languages:}& C++ (expert), C\#, Java (proficient)\\
   \textsc{Patterns:}& DDD, OOP, TDD\\
-  \textsc{Technologies:}& C++11, Qt and Boost libraries, Postgres, Docker, Kafka, Git, SVN, GTest, Gitlab pipelines,\\
-  \textsc{}& Jenkins pipelines, JFrog, OpenAI API\\
+  \textsc{Technologies:}& C++11, Qt and Boost libraries, Docker, AWS, New Relic, Kafka, Git, SVN, GTest, \\
+  \textsc{}& GitLab/Jenkins pipelines, JFrog, OpenAI API, Perforce, UE5+, Postgres\\
 \end{tabular}
 
 \section{Skills}
 \begin{tabular}{rl}
-  \textsc{Languages:}&English, Ukrainian, Russian, French (beginner)\\
+  \textsc{Languages:}&English, Ukrainian, Russian, Spanish (beginner)\\
 \end{tabular}
 
 \end{document}
